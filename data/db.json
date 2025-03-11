@@ -6,7 +6,11 @@
 
       { "id": "2","Nom": "Titus", "Gender": "Mort", "class": "Death knight", "LVL": "10","Race": "Undead", "PV": "7", "Armure": "10", "Mana": "200", 
       "Equipement": ["1", "2"], 
-      "Force": "1", "Dexterite": "10", "Constitution":"2", "Intelligence":"15", "Sagesse":"20", "Charisme":"10"   }
+      "Force": "1", "Dexterite": "10", "Constitution":"2", "Intelligence":"15", "Sagesse":"20", "Charisme":"10"   },
+      
+      {"id": "4","Nom": "Sanders", "Gender": "Male", "class": "Pirate", "LVL": "7","Race": "Humain", "PV": "12", "Armure": "2", "Mana": "0", 
+      "Equipement": [], 
+      "Force": "10", "Dexterite": "12", "Constitution":"8", "Intelligence":"8", "Sagesse":"5", "Charisme":"7"   }
     ],
     "equipement": [
       { "id": "1", "nom": "Deathcharger","type": "Animal", "TypeBonus": "ATK", "BonusValue": "2" },
