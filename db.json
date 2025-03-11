@@ -1,0 +1,22 @@
+{
+    "personnage": [
+      { "id": "1","Nom": "Gitbiter", "Gender": "Male", "class": "Bard", "LVL": "1","Race": "Ork", "PV": "30", "Armure": "0", "Mana": "2", 
+      "Equipement": [], 
+      "Force": "15", "Dexterite": "10", "Constitution":"10", "Intelligence":"5", "Sagesse":"-1", "Charisme":"1"   },
+
+      { "id": "2","Nom": "Titus", "Gender": "Mort", "class": "Death knight", "LVL": "10","Race": "Undead", "PV": "7", "Armure": "10", "Mana": "200", 
+      "Equipement": ["1", "2"], 
+      "Force": "1", "Dexterite": "10", "Constitution":"2", "Intelligence":"15", "Sagesse":"20", "Charisme":"10"   }
+    ],
+    "equipement": [
+      { "id": "1", "nom": "Deathcharger","type": "Animal", "TypeBonus": "ATK", "BonusValue": "2" },
+      { "id": "2", "nom": "SwordOFDeath","type": "Sword", "TypeBonus": "ATK", "BonusValue": "8" }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
