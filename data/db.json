@@ -1,16 +1,50 @@
 {
     "personnage": [
-      { "id": "1","Nom": "Gitbiter", "Gender": "Male", "class": "Bard", "LVL": "1","Race": "Ork", "PV": "30", "Armure": "0", "Mana": "2", 
-      "Equipement": [], 
+      { "id": 1,"Nom": "Gitbiter", "Gender": "Male", "class": "Bard", "LVL": "1","Race": "Ork", "PV": "30", "Armure": "0", "Mana": "2", 
+      "Equipement": [],
+      "SKill": [],
+      "Description": "", 
       "Force": "15", "Dexterite": "10", "Constitution":"10", "Intelligence":"5", "Sagesse":"-1", "Charisme":"1"   },
 
-      { "id": "2","Nom": "Titus", "Gender": "Mort", "class": "Death knight", "LVL": "10","Race": "Undead", "PV": "7", "Armure": "10", "Mana": "200", 
+      { "id": 2,"Nom": "Titus", "Gender": "Mort", "class": "Death knight", "LVL": "10","Race": "Undead", "PV": "7", "Armure": "10", "Mana": "200", 
       "Equipement": ["1", "2"], 
       "Force": "1", "Dexterite": "10", "Constitution":"2", "Intelligence":"15", "Sagesse":"20", "Charisme":"10"   },
       
-      {"id": "4","Nom": "Sanders", "Gender": "Male", "class": "Pirate", "LVL": "7","Race": "Humain", "PV": "12", "Armure": "2", "Mana": "0", 
-      "Equipement": [], 
-      "Force": "10", "Dexterite": "12", "Constitution":"8", "Intelligence":"8", "Sagesse":"5", "Charisme":"7"   }
+      {"id": 3,"Nom": "Sanders", "Gender": "Male", "class": "Pirate", "LVL": "7","Race": "Humain", "PV": "12", "Armure": "2", "Mana": "0", 
+      "Equipement": [],
+      "SKill": [],
+      "Description": "", 
+      "Force": "10", "Dexterite": "12", "Constitution":"8", "Intelligence":"8", "Sagesse":"5", "Charisme":"7"   },
+
+      { "id": 4,"Nom": "Jean-Pierre-Polnaref", "Gender": "Spirit", "class": "", "LVL": "10","Race": "Undead", "PV": "7", "Armure": "10", "Mana": "200", 
+      "Equipement": [],
+      "SKill": [],
+      "Description": "", 
+      "Force": "1", "Dexterite": "10", "Constitution":"2", "Intelligence":"15", "Sagesse":"20", "Charisme":"10"   },
+
+      { "id": 6,"Nom": "Gallywix", "Gender": "Male", "class": "Marchand", "LVL": "12","Race": "Gobelin", "PV": "10", "Armure": "0", "Mana": "5", 
+      "Equipement": [],
+      "SKill": [],
+      "Description": "", 
+      "Force": "5", "Dexterite": "5", "Constitution":"3", "Intelligence":"20", "Sagesse":"20", "Charisme":"2"   },
+
+      { "id": 7,"Nom": "Frieren", "Gender": "Female", "class": "Mage", "LVL": "99","Race": "Elfe", "PV": "52", "Armure": "0", "Mana": "1000", 
+      "Equipement": [],
+      "SKill": [],
+      "Description": "", 
+      "Force": "5", "Dexterite": "225", "Constitution":"20", "Intelligence":"10", "Sagesse":"100", "Charisme":"50"   },
+
+      { "id": 8,"Nom": "Mamie Turbo", "Gender": "Mort", "class": "Mamie", "LVL": "15","Race": "Malédiction", "PV": "3", "Armure": "0", "Mana": "10", 
+      "Equipement": [],
+      "SKill": [],
+      "Description": "", 
+      "Force": "20", "Dexterite": "30", "Constitution":"20", "Intelligence":"2", "Sagesse":"5", "Charisme":"4"   },
+
+      { "id": 9,"Nom": "Slyders", "Gender": "Male", "class": "Cartomancien", "LVL": "20","Race": "Humain", "PV": "2", "Armure": "0", "Mana": "0", 
+      "Equipement": [],
+      "SKill": [],
+      "Description": "", 
+      "Force": "3", "Dexterite": "5", "Constitution":"0", "Intelligence":"20", "Sagesse":"15", "Charisme":"12"   }
     ],
     "equipement": [
       { "id": "1", "nom": "Deathcharger","type": "Animal", "TypeBonus": "ATK", "BonusValue": "2" },
