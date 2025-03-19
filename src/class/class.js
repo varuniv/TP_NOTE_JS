@@ -1,4 +1,4 @@
-export default class ClassCh {
+export class ClassCh {
     constructor(idClassCh, nameClassCh, pv, armure, mana) {
       this.idClassCh = idClassCh;
       this.nameClassCh = nameClassCh;

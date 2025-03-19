@@ -15,7 +15,7 @@
       {"id": 3,"Nom": "Sanders", "Gender": "Male", "class": "Pirate", "LVL": "7","Race": "Humain", "PV": "12", "Armure": "2", "Mana": "0", 
       "Equipement": [],
       "SKill": [],
-      "Description": "Rends dorée un serviteuer allié", 
+      "Description": "Rends dorée un servituer allié", 
       "Force": "10", "Dexterite": "12", "Constitution":"8", "Intelligence":"8", "Sagesse":"5", "Charisme":"7"   },
 
       { "id": 4,"Nom": "Jean-Pierre-Polnaref", "Gender": "Spirit", "class": "", "LVL": "10","Race": "Undead", "PV": "7", "Armure": "10", "Mana": "200", 

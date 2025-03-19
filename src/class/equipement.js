@@ -1,4 +1,4 @@
-export default class Equipement {
+export class Equipement {
     constructor(id, nom, type, def, attack, remainingUse) {
       this.id = id;
       this.nom = nom;

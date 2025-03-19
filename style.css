@@ -1,0 +1,65 @@
+#character-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 2rem;
+    gap: 3rem;
+    align-content: space-around;
+}
+
+h3{
+    text-align: center;
+    font: italic small-caps bold 16px;
+}
+
+.character-card{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    max-width: 10cm;
+    padding: 10px;
+}
+
+.Ork {
+    border: 8px solid #780629;
+    transition-duration: 2s;
+    border-radius: 20px;
+    transition-property: box-shadow;
+    transition-duration: 2s;
+}
+
+.Ork:hover {
+    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+}
+
+
+.Humain{
+    border: 19px ridge #aabcd1;
+    border-radius: 20px;
+    transition-property: scale;
+    transition-duration: 2s;
+}
+
+.Humain:hover{
+    scale: 1.2;
+}
+
+.Elfe{
+    border: 9px outset #2E6F40;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.Undead{
+    border: 10px inset #726b6b;
+    transition-property: box-shadow;
+    transition-duration: 2s;
+}
+.Undead:hover{
+    box-shadow: 2px 1px 50px 17px rgba(63,59,130,0.89);
+    -webkit-box-shadow: 2px 1px 50px 17px rgba(63,59,130,0.89);
+    -moz-box-shadow: 2px 1px 50px 17px rgba(63,59,130,0.89);
+}
+
+.Gobelin{
+    border: 5px solid #106c2a; 
+}

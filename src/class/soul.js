@@ -1,4 +1,4 @@
-export default class Soul {
+export class Soul {
     constructor(id, name, level, description) {
         this.id = id;
         this.name = name;

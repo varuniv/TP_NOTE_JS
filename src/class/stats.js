@@ -1,4 +1,4 @@
-export default class Stats {
+export class Stats {
     constructor(force, dexterite, constitution, intelligence, sagesse, charisme) {
         this.force = force;
         this.dexterite = dexterite;
