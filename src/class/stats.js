@@ -27,5 +27,14 @@ export class Stats {
     getCharisme(){
         return `${this.charisme}`
     }
+
+    upStats() {
+        this.force += Math.floor(Math.random() * 4);
+        this.dexterite += Math.floor(Math.random() * 4);
+        this.constitution += Math.floor(Math.random() * 4);
+        this.intelligence += Math.floor(Math.random() * 4);
+        this.sagesse += Math.floor(Math.random() * 4);
+        this.charisme += Math.floor(Math.random() * 4);
+    }
+    
 }
- 

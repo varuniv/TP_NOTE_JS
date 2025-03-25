@@ -14,10 +14,6 @@ export class Soul {
         return this.name;
     }
 
-    getGender() {
-        return this.gender;
-    }
-
     getDescription() {
         return this.description;
     }
