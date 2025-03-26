@@ -29,12 +29,12 @@ export class Stats {
     }
 
     upStats() {
-        this.force += Math.floor(Math.random() * 4);
-        this.dexterite += Math.floor(Math.random() * 4);
-        this.constitution += Math.floor(Math.random() * 4);
-        this.intelligence += Math.floor(Math.random() * 4);
-        this.sagesse += Math.floor(Math.random() * 4);
-        this.charisme += Math.floor(Math.random() * 4);
+        this.force += Math.max(Math.trunc(this.force/10), 1);
+        this.dexterite += Math.max(Math.trunc(this.dexterite/10), 1);
+        this.constitution += Math.max(Math.trunc(this.constitution/10), 1);
+        this.intelligence += Math.max(Math.trunc(this.intelligence/10), 1);
+        this.sagesse += Math.max(Math.trunc(this.sagesse/10), 1);
+        this.charisme += Math.max(Math.trunc(this.charisme/10), 1);
     }
     
 }

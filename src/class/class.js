@@ -1,25 +1,31 @@
 export class ClassCh {
-    constructor(idClassCh, nameClassCh, pv, armure, mana) {
-      this.idClassCh = idClassCh;
-      this.nameClassCh = nameClassCh;
-      this.pv = pv;
-      this.armure = armure;
-      this.mana = mana;
-    }
-  
-    getName(){
-      return this.name;
-    }
+  constructor(idClassCh, nameClassCh, pv, armure, mana) {
+    this.idClassCh = idClassCh;
+    this.nameClassCh = nameClassCh;
+    this.pv = pv;
+    this.armure = armure;
+    this.mana = mana;
+  }
 
-    getPV(){
-      return this.pv;
-    }
+  getName(){
+    return this.name;    
+  }
   
-    getArmure(){
-      return this.armure;
-    }
+  getPV(){
+    return this.pv;
+  }
 
-    getMana(){
-      return this.mana;
-    }
+  getArmure(){
+    return this.armure;
+  }
+  
+  getMana(){
+    return this.mana;
+  }
+
+  stepUp(){
+    this.pv += Math.floor(Math.random() * 4);
+    this.mana += Math.floor(Math.random() * 4);
+  }
+
 }

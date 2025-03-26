@@ -31,7 +31,6 @@ h3{
     transition-duration: 2s;
     border-radius: 20px;
     transition-property: box-shadow;
-    transition-duration: 2s;
 }
 
 .Ork:hover {
@@ -69,4 +68,13 @@ h3{
 
 .Gobelin{
     border: 5px solid #106c2a; 
+}
+
+.Malediction{
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+.Malediction:hover{
+    transform: rotate(360deg);
 }

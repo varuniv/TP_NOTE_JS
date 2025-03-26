@@ -15,7 +15,7 @@ export class Provider {
     static async getCharacters() {
         const data = await this.fetchData("personnage");
         return data.map(p => new Character(
-            new Soul(Number(p.id), p.Nom, Number(p.LVL), p.Description),
+            new Soul(Number(p.id), p.Nom, Number(p.LVL), p.Description,p.img),
             new ClassCh(p.class, p.class, Number(p.PV), Number(p.Armure), Number(p.Mana)),
             p.Gender,
             p.Race,

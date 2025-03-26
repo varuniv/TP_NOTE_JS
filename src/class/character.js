@@ -16,7 +16,8 @@ export class Character {
 
     lvlUp(){
         this.soul.level = this.soul.level +1;
-        this.stats.upStats(); 
+        this.stats.upStats();
+        this.classCh.stepUp(); 
     }
 
 }
