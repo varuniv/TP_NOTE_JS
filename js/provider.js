@@ -24,4 +24,25 @@ export class Provider {
             new Stats(Number(p.Force), Number(p.Dexterite), Number(p.Constitution), Number(p.Intelligence), Number(p.Sagesse), Number(p.Charisme))
         ));
     }
+
+    static async updateCharacter(id, updatedStats) {
+        const currentData = await this.fetchData(`personnage/${id}`);
+        if (!currentData) {
+            throw new Error("Personnage non trouvé");
+        }
+        const updatedCharacter = { ...currentData, ...updatedStats };
+        const response = await fetch(`${ENDPOINT}/personnage/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(updatedCharacter)
+        });
+        if (!response.ok) {
+            throw new Error("Erreur lors de la mise à jour du personnage");
+        }
+    
+        return response.json();
+    }
+    
 }

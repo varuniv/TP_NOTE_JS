@@ -70,6 +70,24 @@ class App {
         console.log(character);
         character.lvlUp();
         console.log(character);
+        (async () => {
+            try {
+                await Provider.updateCharacter(id, {
+                    LVL: character.soul.level,
+                    PV: character.classCh.pv,
+                    Mana: character.classCh.mana,
+                    Force: character.stats.force,
+                    Dexterite: character.stats.dexterite,
+                    Constitution: character.stats.constitution,
+                    Intelligence: character.stats.intelligence,
+                    Sagesse: character.stats.sagesse,
+                    Charisme: character.stats.charisme
+                });
+                console.log("Mise à jour réussie");
+            } catch (error) {
+                console.error("Erreur lors de la mise à jour :", error);
+            }
+        })();
         app.showCharacterDetail(id);
     }
 }
