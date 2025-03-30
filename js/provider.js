@@ -38,11 +38,18 @@ export class Provider {
             },
             body: JSON.stringify(updatedCharacter)
         });
-        if (!response.ok) {
-            throw new Error("Erreur lors de la mise à jour du personnage");
-        }
-    
         return response.json();
     }
+
+    static async addCharacter(character) {
+        const response = await fetch(`${ENDPOINT}/personnage`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(character)
+        });
+        return response.json();
+    }    
     
 }
