@@ -40,6 +40,7 @@ export class Provider {
         });
         return response.json();
     }
+    
 
     static async addCharacter(character) {
         const response = await fetch(`${ENDPOINT}/personnage`, {
