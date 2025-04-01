@@ -13,6 +13,10 @@
     align-content: space-around;
 }
 
+nav{
+    background-color: #b9b8bf
+}
+
 h3{
     text-align: center;
     font: italic small-caps bold 16px;
