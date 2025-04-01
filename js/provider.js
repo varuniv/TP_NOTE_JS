@@ -50,6 +50,10 @@ export class Provider {
             body: JSON.stringify(character)
         });
         return response.json();
-    }     
+    }
+
+      
+    
         
+
 }
