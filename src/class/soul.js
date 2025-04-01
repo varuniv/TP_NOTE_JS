@@ -1,9 +1,10 @@
 export class Soul {
-    constructor(id, name, level, description) {
+    constructor(id, name, level, description,img) {
         this.id = id;
         this.name = name;
         this.level = level;
         this.description = description;
+        this.img = img;
     }
 
     getId() {
@@ -12,10 +13,6 @@ export class Soul {
 
     getName() {
         return this.name;
-    }
-
-    getGender() {
-        return this.gender;
     }
 
     getDescription() {

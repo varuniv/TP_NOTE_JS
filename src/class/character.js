@@ -14,4 +14,10 @@ export class Character {
         console.log(`${item} added to ${this.name}'s inventory.`);
     }
 
+    lvlUp(){
+        this.soul.level = this.soul.level +1;
+        this.stats.upStats();
+        this.classCh.stepUp(); 
+    }
+
 }

@@ -15,13 +15,41 @@ export class Provider {
     static async getCharacters() {
         const data = await this.fetchData("personnage");
         return data.map(p => new Character(
-            new Soul(p.id, p.Nom, p.LVL, p.Description),
-            new ClassCh(p.class, p.class, p.PV, p.Armure, p.Mana),
+            new Soul(Number(p.id), p.Nom, Number(p.LVL), p.Description,p.img),
+            new ClassCh(p.class, p.class, Number(p.PV), Number(p.Armure), Number(p.Mana)),
             p.Gender,
             p.Race,
-            p.Equipement.map(e => new Equipement(e.id, e.nom, e.type, e.TypeBonus === 'DEF' ? e.BonusValue : 0, e.TypeBonus === 'ATK' ? e.BonusValue : 0, e.remainingUse || 1)),
+            p.Equipement.map(e => new Equipement(Number(e.id), e.nom, e.type, e.TypeBonus === 'DEF' ? e.BonusValue : 0, e.TypeBonus === 'ATK' ? e.BonusValue : 0, e.remainingUse || 1)),
             p.SKill,
-            new Stats(p.Force, p.Dexterite, p.Constitution, p.Intelligence, p.Sagesse, p.Charisme)
+            new Stats(Number(p.Force), Number(p.Dexterite), Number(p.Constitution), Number(p.Intelligence), Number(p.Sagesse), Number(p.Charisme))
         ));
     }
+
+    static async updateCharacter(id, updatedStats) {
+        const currentData = await this.fetchData(`personnage/${id}`);
+        if (!currentData) {
+            throw new Error("Personnage non trouvé");
+        }
+        const updatedCharacter = { ...currentData, ...updatedStats };
+        const response = await fetch(`${ENDPOINT}/personnage/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(updatedCharacter)
+        });
+        return response.json();
+    }
+
+    static async addCharacter(character) {
+        const response = await fetch(`${ENDPOINT}/personnage`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(character)
+        });
+        return response.json();
+    }     
+        
 }
