@@ -30,12 +30,11 @@ class App {
     addToFavorites(id) {
         let profile = JSON.parse(localStorage.getItem("profile")) || { name: "local", favoris: [] };
     
-        console.log(id)
-        console.log(profile.favoris.includes(id))
+        
         if (!profile.favoris.includes(id)) {
             profile.favoris.push(id); 
             localStorage.setItem("profile", JSON.stringify(profile));
-            console.log(profile) 
+             
         }
     }
     
