@@ -11,17 +11,26 @@
     <header>
         <h1>Gestion des Personnages</h1>
         <nav class = "d-flex ">
-            <input type="text" id="search" placeholder="Rechercher un personnage...">
             <button class="btn btn-dark" onclick="app.ShowAddCharacter()"> Ajouter une personnage</button>
         </nav>
         
     </header>
     
     <main>
+        <section>
+            <div class="search-container">
+                <input type="text" id="search" class="search-box" placeholder="Rechercher un personnage..." />
+                <table class="search-results" id="results-table">
+                    <thead>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
         <section id="character-detail" class="character-detail">
             <h2>Détails du personnage</h2>
-            <p>Sélectionnez un personnage pour voir les détails.</p>
-            
+            <p>Sélectionnez un personnage pour voir les détails.</p>    
         </section>
         <section id="character-list" class="character-container">
         </section>
@@ -31,5 +40,7 @@
     <script type="module" src="./js/config.js"></script>
     <script type="module" src="./js/provider.js"></script>
     <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/search.js"></script>
+
 </body>
 </html>

@@ -88,4 +88,25 @@ input, textarea, select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-box {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #7b61ff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.search-results {
+    width: 80%;
+    border-collapse: collapse;
+}
