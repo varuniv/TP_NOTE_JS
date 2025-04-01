@@ -49,21 +49,12 @@ class App {
                     <p>Sagesse: ${character.stats.sagesse} | Charisme: ${character.stats.charisme}</p>
                     <p>Skills : ${character.skill} </p>
                     <button onclick="app.evolve(${id})">Donner de l'exp</button>
-                    <button onclick="app.addToFavorites(${id})">Ajouter aux favoris</button>
+                    <button onclick="app.addToFavoris(${id})">Ajouter aux favoris</button>
                 </div>
             </div>
         `;
         document.getElementById("character-list").innerHTML =``
     }
-
-    addToFavorites(id) {
-        let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-        if (!favorites.includes(id)) {
-            favorites.push(id);
-            localStorage.setItem("favorites", JSON.stringify(favorites));
-        }
-    }
-
 
     evolve(id){
         const character = this.characters.find(c => c.soul.id === id);
