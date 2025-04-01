@@ -42,6 +42,7 @@ class App {
     
 
     evolve(id) {
+
         const character = this.characters.find(c => c.soul.id === id);
         console.log(character);
         character.lvlUp();
