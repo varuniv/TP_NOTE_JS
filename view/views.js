@@ -1,4 +1,3 @@
-// views.js
 export class CharacterViews {
     static renderCharacterList(characters) {
         const container = document.getElementById("character-list");
