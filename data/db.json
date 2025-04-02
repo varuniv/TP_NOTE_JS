@@ -1,7 +1,7 @@
 {
   "personnage": [
     {
-      "id": 1,
+      "id": "1",
       "Nom": "Gitbiter",
       "Gender": "Male",
       "class": "Bard",
@@ -24,7 +24,7 @@
       "Charisme": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "Nom": "Titus",
       "Gender": "Mort",
       "class": "Death knight",
@@ -50,7 +50,7 @@
       "Charisme": "10"
     },
     {
-      "id": 3,
+      "id": "3",
       "Nom": "Sanders",
       "Gender": "Male",
       "class": "Pirate",
@@ -71,7 +71,7 @@
       "Charisme": "7"
     },
     {
-      "id": 4,
+      "id": "4",
       "Nom": "Jean-Pierre-Polnaref",
       "Gender": "Spirit",
       "class": "",
@@ -92,7 +92,7 @@
       "Charisme": "10"
     },
     {
-      "id": 6,
+      "id": "6",
       "Nom": "Gallywix",
       "Gender": "Male",
       "class": "Marchand",
@@ -113,7 +113,7 @@
       "Charisme": "2"
     },
     {
-      "id": 7,
+      "id": "7",
       "Nom": "Frieren",
       "Gender": "Female",
       "class": "Mage",
@@ -134,7 +134,7 @@
       "Charisme": "50"
     },
     {
-      "id": 8,
+      "id": "8",
       "Nom": "Mamie Turbo",
       "Gender": "Mort",
       "class": "Mamie",
@@ -157,7 +157,7 @@
       "Charisme": "4"
     },
     {
-      "id": 9,
+      "id": "9",
       "Nom": "Slyders",
       "Gender": "Male",
       "class": "Cartomancien",
@@ -178,7 +178,7 @@
       "Charisme": "12"
     },
     {
-      "id": 10,
+      "id": "10",
       "Nom": "Harry Potter",
       "Gender": "Male",
       "class": "Sorcier",
@@ -199,7 +199,7 @@
       "SKill": []
     },
     {
-      "id": 11,
+      "id": "11",
       "Nom": "Gimli",
       "Gender": "Male",
       "class": "Guerrier",
@@ -220,7 +220,7 @@
       "SKill": []
     },
     {
-      "id": 12,
+      "id": "12",
       "Nom": "Picsou",
       "Gender": "Male",
       "class": "Marchand",
@@ -241,7 +241,7 @@
       "SKill": []
     },
     {
-      "id": 1743493087122,
+      "id": "1743493087122",
       "Nom": "Poulet Blanc",
       "Gender": "Other",
       "class": "DragonFeu",
@@ -285,5 +285,4 @@
       "BonusValue": "1"
     }
   ]
-  
 }

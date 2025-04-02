@@ -93,6 +93,8 @@ export class CharacterViews {
     
                 <label for="charisme">Charisme :</label>
                 <input type="number" id="charisme" name="charisme" required><br>
+
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
     
                 <button type="submit">Créer le personnage</button>
             </form>

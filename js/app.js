@@ -89,6 +89,7 @@ class App {
     showAddCharacter() {
         CharacterViews.renderAddCharacterForm();
         this.setupCharacterFormSubmit();
+        retourHome()
     }
     
     setupCharacterFormSubmit() {
@@ -105,7 +106,7 @@ class App {
                 Armure: Number(document.getElementById("armure").value),
                 Mana: Number(document.getElementById("mana").value),
                 Description: document.getElementById("description").value,
-                img: "data/img/noimg.jpg",
+                img: document.getElementById("avatar").value,
                 Force: Number(document.getElementById("force").value),
                 Dexterite: Number(document.getElementById("dexterite").value),
                 Constitution: Number(document.getElementById("constitution").value),
@@ -113,7 +114,8 @@ class App {
                 Sagesse: Number(document.getElementById("sagesse").value),
                 Charisme: Number(document.getElementById("charisme").value),
                 Equipement: [],
-                SKill: []
+                SKill: [],
+                Note: ""
             };
             
             try {
