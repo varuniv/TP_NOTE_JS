@@ -18,8 +18,7 @@ class App {
 
     retourHome() {
         CharacterViews.clearCharacterDetail();
-        CharacterViews.clearFormAjout();
-        
+        this.renderCharacterList();
     }
 
     showCharacterDetail(id) {
