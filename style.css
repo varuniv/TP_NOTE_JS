@@ -30,6 +30,18 @@ h3{
     padding: 10px;
 }
 
+.character-card-img{
+    display: flex;
+    max-height: 10cm;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.character-card-img img{
+    height: 10cm;
+}
+
 .Ork {
     border: 8px solid #780629;
     transition-duration: 2s;
@@ -113,4 +125,14 @@ input, textarea, select {
 .search-results {
     width: 80%;
     border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.search-results tbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

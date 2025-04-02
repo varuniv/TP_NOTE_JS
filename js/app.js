@@ -18,7 +18,8 @@ class App {
 
     retourHome() {
         CharacterViews.clearCharacterDetail();
-        this.renderCharacterList();
+        CharacterViews.clearFormAjout();
+        
     }
 
     showCharacterDetail(id) {
@@ -116,7 +117,6 @@ class App {
     showAddCharacter() {
         CharacterViews.renderAddCharacterForm();
         this.setupCharacterFormSubmit();
-        retourHome()
     }
     
     setupCharacterFormSubmit() {
@@ -153,6 +153,7 @@ class App {
             catch (error) {
                 console.error("Erreur lors de l'ajout du personnage :", error);
             }
+            this.retourHome();
         });
     }
 }
