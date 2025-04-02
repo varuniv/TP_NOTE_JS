@@ -5,6 +5,7 @@ export class Soul {
         this.level = level;
         this.description = description;
         this.img = img;
+        this.note = "";
     }
 
     getId() {
