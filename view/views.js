@@ -11,6 +11,21 @@ export class CharacterViews {
         `).join("");
     }
 
+    static renderCharacter(character) {
+        const container = document.getElementById("character-detail");
+        if (!container) return;
+        
+        container.innerHTML = `
+            <div class="character-detail-card ${character.race}">
+                <h2>${character.soul.name} (LVL ${character.soul.level})</h2>
+                <img src="${character.soul.img || "data/img/noimg.jpg"}" alt="${character.soul.name}">
+                <p><strong>Description:</strong> ${character.soul.description || "Pas de description"}</p>
+                <p><strong>Race:</strong> ${character.race || "Inconnu"} | <strong>Classe:</strong> ${character.classCh.nameClassCh || "Inconnu"}</p>
+                <button onclick="app.goBack()">Retour</button>
+            </div>
+        `;
+    }
+
     static renderCharacterDetail(character) {
         document.getElementById("character-detail").innerHTML = `
             <div class="d-flex flex-row w-50 justify-content-center">

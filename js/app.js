@@ -44,15 +44,13 @@ class App {
             console.log("Aucun favori trouvé.");
             return;
         }
-
-        console.log("Liste des favoris :");
+        this.fav = []
         profile.favoris.forEach((id) => {
-            this.showCharacterDetail(id);
-        });
-        
-        CharacterViews.renderCharacterList(profile.favoris.forEach((id) => {
-            this.characters.find(c => c.soul.id === id)
-        }))
+            const character = this.characters.find(c => c.soul.id === id)
+            this.fav.push(character)
+            console.log(character)
+        })
+        CharacterViews.renderCharacterList(this.fav)
 
     }
 
