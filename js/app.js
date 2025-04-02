@@ -27,6 +27,7 @@ class App {
         CharacterViews.renderCharacterDetail(character);
     }
 
+    
     addToFavorites(id) {
         let profile = JSON.parse(localStorage.getItem("profile")) || { name: "local", favoris: [] };
     
@@ -36,6 +37,22 @@ class App {
             localStorage.setItem("profile", JSON.stringify(profile));
              
         }
+    }
+    DisplayFavorites() {
+        let profile = JSON.parse(localStorage.getItem("profile")) || { name: "typicode", favoris: [] };
+
+        if (profile.favoris.length === 0) {
+            console.log("Aucun favori trouvé.");
+            return;
+        }
+        this.fav = []
+        profile.favoris.forEach((id) => {
+            const character = this.characters.find(c => c.soul.id === id)
+            this.fav.push(character)
+            
+        })
+        CharacterViews.renderCharacterList(this.fav)
+
     }
     
     
