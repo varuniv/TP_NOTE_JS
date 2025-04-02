@@ -4,7 +4,7 @@ export class CharacterViews {
         container.innerHTML = characters.map(character => `
             <div class="character-card ${character.race}" onclick="app.showCharacterDetail(${character.soul.id})">
                 <h3>${character.soul.name} (LVL ${character.soul.level})</h3>
-                <img src="${character.soul.img || "data/img/noimg.jpg"}" ></img>
+                <img src="${character.soul.img || "data/img/noimg.jpg"}" loading="lazy" ></img>
                 <p>${character.soul.description || "Pas de description"}</p>
                 <p>Race: ${character.race || "Inconnu"} | Classe: ${character.classCh.nameClassCh || "Inconnu" }</p>
             </div>
@@ -20,7 +20,7 @@ export class CharacterViews {
 
                 <div class="character-card ${character.race}">
                     <h2>${character.soul.name} (LVL ${character.soul.level})</h2>
-                    <img src="${character.soul.img || "data/img/noimg.jpg"}" ></img>
+                    <img src="${character.soul.img || "data/img/noimg.jpg"}" loading="lazy" ></img>
                     <p>Classe: ${character.classCh.nameClassCh}</p>
                     <p>Race: ${character.race}</p>
                     <p>PV: ${character.classCh.pv} | Mana: ${character.classCh.mana}</p>
