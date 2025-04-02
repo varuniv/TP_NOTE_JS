@@ -27,15 +27,15 @@ class App {
         CharacterViews.renderCharacterDetail(character);
     }
 
+    
     addToFavorites(id) {
         let profile = JSON.parse(localStorage.getItem("profile")) || { name: "local", favoris: [] };
     
-        console.log(id)
-        console.log(profile.favoris.includes(id))
+        
         if (!profile.favoris.includes(id)) {
             profile.favoris.push(id); 
             localStorage.setItem("profile", JSON.stringify(profile));
-            console.log(profile) 
+             
         }
     }
 
@@ -64,6 +64,22 @@ class App {
         })();
         
         this.showCharacterDetail(id);
+    }
+
+    DisplayFavorites() {
+        let profile = JSON.parse(localStorage.getItem("profile")) || { name: "typicode", favoris: [] };
+
+        if (profile.favoris.length === 0) {
+            console.log("Aucun favori trouvé.");
+            return;
+        }
+        this.fav = []
+        profile.favoris.forEach((id) => {
+            const character = this.characters.find(c => c.soul.id === id)
+            this.fav.push(character)
+            
+        })
+        CharacterViews.renderCharacterList(this.fav)
     }
     
     
@@ -100,6 +116,7 @@ class App {
     showAddCharacter() {
         CharacterViews.renderAddCharacterForm();
         this.setupCharacterFormSubmit();
+        retourHome()
     }
     
     setupCharacterFormSubmit() {
@@ -116,7 +133,7 @@ class App {
                 Armure: Number(document.getElementById("armure").value),
                 Mana: Number(document.getElementById("mana").value),
                 Description: document.getElementById("description").value,
-                img: "data/img/noimg.jpg",
+                img: document.getElementById("avatar").value,
                 Force: Number(document.getElementById("force").value),
                 Dexterite: Number(document.getElementById("dexterite").value),
                 Constitution: Number(document.getElementById("constitution").value),
@@ -124,7 +141,8 @@ class App {
                 Sagesse: Number(document.getElementById("sagesse").value),
                 Charisme: Number(document.getElementById("charisme").value),
                 Equipement: [],
-                SKill: []
+                SKill: [],
+                Note: ""
             };
             
             try {
