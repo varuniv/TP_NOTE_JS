@@ -33,7 +33,7 @@ export class CharacterViews {
                     <p>Skills : ${character.skill} </p>
                     <button onclick="app.evolve(${character.soul.id})">Donner de l'exp</button>
                     <button onclick="app.addToFavorites(${character.soul.id})">Ajouter aux favoris</button>
-                    <input type="number" id="note-${character.soul.id}" min="0" max="5" step="1" value="2">
+                    <input type="number" id="note-${character.soul.id}" min="0" max="5" step="1" value="0">
                     <button onclick="app.addNote(${character.soul.id}, document.getElementById('note-${character.soul.id}').value)">Ajouter Note</button>
                 </div>
             </div>
