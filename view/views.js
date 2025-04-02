@@ -7,6 +7,7 @@ export class CharacterViews {
                 <img src="${character.soul.img || "data/img/noimg.jpg"}" loading="lazy" ></img>
                 <p>${character.soul.description || "Pas de description"}</p>
                 <p>Race: ${character.race || "Inconnu"} | Classe: ${character.classCh.nameClassCh || "Inconnu" }</p>
+                <p> Note: ${character.soul.note || "Pas de note "}<p>
             </div>
         `).join("");
     }

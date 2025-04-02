@@ -49,7 +49,7 @@
       "Intelligence": 15,
       "Sagesse": 20,
       "Charisme": 10,
-      "Note": "0"
+      "Note": "2"
     },
     {
       "id": "3",
@@ -262,7 +262,7 @@
       "Armure": 110,
       "Mana": 150,
       "Description": "Il est la mascotte de Pokémon Noir, associé à la symbolique du Yang, et le rival de Zekrom.",
-      "img": "data/img/noimg.jpg",
+      "img": "data/img/reshiram.jpg",
       "Force": 120,
       "Dexterite": 90,
       "Constitution": 100,
