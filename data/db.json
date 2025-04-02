@@ -21,18 +21,19 @@
       "Constitution": "10",
       "Intelligence": "5",
       "Sagesse": "-1",
-      "Charisme": "1"
+      "Charisme": "1",
+      "Note": ""
     },
     {
       "id": "2",
       "Nom": "Titus",
       "Gender": "Mort",
       "class": "Death knight",
-      "LVL": "10",
+      "LVL": 10,
       "Race": "Undead",
-      "PV": "7",
+      "PV": 7,
       "Armure": "10",
-      "Mana": "200",
+      "Mana": 200,
       "Equipement": [
         1,
         2
@@ -42,12 +43,13 @@
       ],
       "Description": "Dame Blaumeux préférerait qu’on dise « la cavalière et les trois cavaliers ».",
       "img": "data/img/Titus_Rivendare_HS.png",
-      "Force": "1",
-      "Dexterite": "10",
-      "Constitution": "2",
-      "Intelligence": "15",
-      "Sagesse": "20",
-      "Charisme": "10"
+      "Force": 1,
+      "Dexterite": 10,
+      "Constitution": 2,
+      "Intelligence": 15,
+      "Sagesse": 20,
+      "Charisme": 10,
+      "Note": "0"
     },
     {
       "id": "3",
@@ -68,7 +70,8 @@
       "Constitution": "8",
       "Intelligence": "8",
       "Sagesse": "5",
-      "Charisme": "7"
+      "Charisme": "7",
+      "Note": ""
     },
     {
       "id": "4",
@@ -89,7 +92,8 @@
       "Constitution": "2",
       "Intelligence": "15",
       "Sagesse": "20",
-      "Charisme": "10"
+      "Charisme": "10",
+      "Note": ""
     },
     {
       "id": "6",
@@ -110,7 +114,8 @@
       "Constitution": "3",
       "Intelligence": "20",
       "Sagesse": "20",
-      "Charisme": "2"
+      "Charisme": "2",
+      "Note": ""
     },
     {
       "id": "7",
@@ -131,7 +136,8 @@
       "Constitution": "20",
       "Intelligence": "10",
       "Sagesse": "100",
-      "Charisme": "50"
+      "Charisme": "50",
+      "Note": ""
     },
     {
       "id": "8",
@@ -154,7 +160,8 @@
       "Constitution": "20",
       "Intelligence": "2",
       "Sagesse": "5",
-      "Charisme": "4"
+      "Charisme": "4",
+      "Note": ""
     },
     {
       "id": "9",
@@ -175,7 +182,8 @@
       "Constitution": "0",
       "Intelligence": "20",
       "Sagesse": "15",
-      "Charisme": "12"
+      "Charisme": "12",
+      "Note": ""
     },
     {
       "id": "10",
@@ -196,7 +204,8 @@
       "Sagesse": 8,
       "Charisme": 5,
       "Equipement": [],
-      "SKill": []
+      "SKill": [],
+      "Note": ""
     },
     {
       "id": "11",
@@ -217,7 +226,8 @@
       "Sagesse": 2,
       "Charisme": 45,
       "Equipement": [],
-      "SKill": []
+      "SKill": [],
+      "Note": ""
     },
     {
       "id": "12",
@@ -238,7 +248,8 @@
       "Sagesse": 28,
       "Charisme": 10,
       "Equipement": [],
-      "SKill": []
+      "SKill": [],
+      "Note": ""
     },
     {
       "id": "1743493087122",
@@ -259,7 +270,8 @@
       "Sagesse": 90,
       "Charisme": 80,
       "Equipement": [],
-      "SKill": []
+      "SKill": [],
+      "Note": ""
     }
   ],
   "equipement": [

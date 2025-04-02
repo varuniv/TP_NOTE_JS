@@ -38,6 +38,34 @@ class App {
              
         }
     }
+
+    addNote(id, evaluate) {
+        const character = this.characters.find(c => c.soul.id === id);
+        character.soul.note = evaluate;
+
+        (async () => {
+            try {
+                await Provider.updateCharacter(id, {
+                    LVL: character.soul.level,
+                    PV: character.classCh.pv,
+                    Mana: character.classCh.mana,
+                    Force: character.stats.force,
+                    Dexterite: character.stats.dexterite,
+                    Constitution: character.stats.constitution,
+                    Intelligence: character.stats.intelligence,
+                    Sagesse: character.stats.sagesse,
+                    Charisme: character.stats.charisme,
+                    Note : character.soul.note
+                });
+                console.log("Mise à jour réussie");
+            } catch (error) {
+                console.error("Erreur lors de la mise à jour :", error);
+            }
+        })();
+        
+        this.showCharacterDetail(id);
+    }
+
     DisplayFavorites() {
         let profile = JSON.parse(localStorage.getItem("profile")) || { name: "typicode", favoris: [] };
 
@@ -52,7 +80,6 @@ class App {
             
         })
         CharacterViews.renderCharacterList(this.fav)
-
     }
     
     
